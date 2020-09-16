@@ -1,4 +1,99 @@
+* {
+  margin: 0;
+}
+img {
+  max-width: 100%;
+}
+
 body {
   background-color: #232323;
   color: white;
+}
+nav {
+  position: sticky;
+  display: flex;
+  background-color:#2e2e2eb4;
+  height: 3.5em;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav > * > * {
+  margin-left: 1.5em;
+}
+.search {
+  flex:2fr 1fr 15em;
+  display: flex;
+}
+.search > button {
+  margin-left:0;
+  width: 5em;
+  background-color: #3a3a3a;
+  border: 0.01em solid #3a3a3a;
+  border-radius: 0.2em;
+  background-image: url("/assets/images/searchLogo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1.2em;
+}
+.hamburger {
+  max-width: 1.2em;
+}
+.yotubeLogo {
+  max-width: 5em;
+}
+input {
+  height: 0.5em;
+  width: 35em;
+  background-color: #1b1b1b;
+  border: 0.01em solid #3a3a3a;
+  border-radius: 0.2em;
+  color: #a1a1a1;
+  padding: 0.6em;
+  font-size: 1rem;
+  flex: 5fr 1fr;
+  margin-left: 0;
+}
+.icons {
+  margin-right: 1em;
+  margin-left: 0.1em;
+}
+
+.icons > * {
+  height: 3em;
+  width: 3em;
+  background-color: transparent;
+  border-radius: 2em;
+  padding: 1.1em;
+  margin: 0.3em;
+  border: none;
+}
+#createBt {
+  background: url("/assets/images/createLogo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 2em;
+}
+#Notifications {
+  background: url("/assets/images/notificationLogo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 2.5em;
+}
+#YoutubeApp {
+  background: url("/assets/images/appLogo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 2em;
+}
+#userLogouserLogo {
+  background: url("/assets/images/userLogo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 3em;
+}
+
+button:hover {
+  background-color: #3a3a3a !important;
 }
