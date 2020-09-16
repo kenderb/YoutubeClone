@@ -11,8 +11,9 @@ body {
 }
 nav {
   position: sticky;
+  top: 0;
   display: flex;
-  background-color:#2e2e2eb4;
+  background-color:#2e2e2ef8;
   height: 3.5em;
   justify-content: space-between;
   align-items: center;
@@ -96,4 +97,29 @@ input {
 
 button:hover {
   background-color: #3a3a3a !important;
+}
+iframe {
+  min-height: 100%;
+  min-width: 100%;
+}
+
+main {
+  margin-left: 5em;
+  margin-right: 5em;
+  margin-top: 2em;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: 1fr 5fr;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: red;
+}
+.contentVideo {
+  max-height: 80em;
+}
+
+@media(max-with:1016px) {
+  .search > input {
+    display: none !important;
+  }
 }
