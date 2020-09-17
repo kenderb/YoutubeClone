@@ -99,11 +99,9 @@ button:hover {
   background-color: #3a3a3a !important;
 }
 iframe {
-  /* min-height: 100%; */
   width: 100%;
   grid-area: Video;
 }
-
 main {
   margin-left: 5em;
   margin-right: 5em;
